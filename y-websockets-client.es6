@@ -7324,6 +7324,8 @@ function extend (Y) {
       socket.on('yjsEvent', this._onYjsEvent)
 
       this._onDisconnect = function (peer) {
+	socket.off('disconnect', self._onDisconnect)
+        socket.off('yjsEvent', self._onYjsEvent)
         Y.AbstractConnector.prototype.disconnect.call(self)
       }
       socket.on('disconnect', this._onDisconnect)

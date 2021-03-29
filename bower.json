@@ -1,6 +1,6 @@
 {
-  "name": "y-websockets-client",
-  "version": "8.0.16",
+  "name": "ys-y-websockets-client",
+  "version": "8.0.17",
   "homepage": "http://y-js.org",
   "authors": [
     "Kevin Jahns <kevin.jahns@rwth-aachen.de>"
